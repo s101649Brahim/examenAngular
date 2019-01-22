@@ -3,14 +3,14 @@
 
   <form (ngSubmit)="onSubmit()">
     <div class="form-group" [formGroup]="search">
-      <label for="name">Name :</label>&nbsp;&nbsp;
+      <label for="name">Naam van het recept :</label>&nbsp;&nbsp;&nbsp;
       <input type="text" formControlName="name" />
-      <label for="name">Caloriën :</label>&nbsp;&nbsp;
+      <label for="caloriën">Caloriën :</label>&nbsp;&nbsp;&nbsp;
       <input type="text" formControlName="caloriën" />
-      <label for="name">Ingrediënten :</label>&nbsp;&nbsp;
-      <input type="text" formControlName="ingrediënten " />
-      <label for="name">Tijd :</label>&nbsp;&nbsp;
-      <input type="text" formControlName="tijd " />
+      <label for="ingrediënten">Ingrediënten :</label>&nbsp;&nbsp;&nbsp;
+      <input type="text" formControlName="ingrediënten" />
+      <label for="tijd">Tijd :</label>&nbsp;&nbsp;&nbsp;
+      <input type="text" formControlName="tijd" /> &nbsp; minuten
     </div>
     <br />
     <button type="submit" class="btn btn-success">Search</button>

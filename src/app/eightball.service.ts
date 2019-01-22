@@ -1,5 +1,4 @@
 import { Injectable } from "@angular/core";
-import { Product } from "./product";
 
 @Injectable()
 export class EightballService {
@@ -7,14 +6,17 @@ export class EightballService {
 
   receptToevoegen(
     name: string,
-    caloriën: number,
+    caloriën: string,
     ingrediënten: string,
-    tijd: number
+    tijd: string
   ): string {
     let antwoord = "";
     if (localStorage.getItem(name) == null) {
-      antwoord = `${name}&: caloriën=${caloriën}&, ingrediënten=${ingrediënten}&, tijd=${tijd}&`;
-      localStorage.setItem(name, `${caloriën}&${ingrediënten}&${tijd}&`);
+      antwoord = `${name}: caloriën=${caloriën}, ingrediënten=${ingrediënten}, tijd=${tijd} minuten`;
+      localStorage.setItem(
+        name,
+        ` caloriën=${caloriën}, ingrediënten=${ingrediënten}, tijd=${tijd} minuten`
+      );
     } else {
       antwoord = localStorage.getItem(name);
     }
