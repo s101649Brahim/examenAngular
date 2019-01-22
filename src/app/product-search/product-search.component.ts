@@ -26,7 +26,10 @@ export class ProductSearchComponent {
 
   onSubmit() {
     this.antwoord = this.eightballService.receptToevoegen(
-      this.search.value.name, this.search.value.caloriën, this.search.value.ingrediënten, this.search.value.tijd
+      this.search.value.name,
+      this.search.value.caloriën,
+      this.search.value.ingrediënten,
+      this.search.value.tijd
     );
   }
 }

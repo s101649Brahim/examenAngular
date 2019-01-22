@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Search Product</h1>
+  <h1>Recept toevoegen</h1>
 
   <form (ngSubmit)="onSubmit()">
     <div class="form-group" [formGroup]="search">
@@ -13,9 +13,9 @@
       <input type="text" formControlName="tijd" /> &nbsp; minuten
     </div>
     <br />
-    <button type="submit" class="btn btn-success">Search</button>
+    <button type="submit" class="btn btn-success">Toevoegen</button>
   </form>
   <br /><br />
-  <h2>Result</h2>
+  <h2>Opgeslagen recepten</h2>
   <label>Recepten :&nbsp;</label>{{ antwoord }}<br />
 </div>
